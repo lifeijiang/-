@@ -1,0 +1,1446 @@
+<style>
+        @charset"utf-8";
+.newsnav {
+    background: #f4f4f4;
+    border: 1px solid #e5e5e5;
+    height: 80px;
+    margin-top: 20px
+}
+
+.newsnav ul li {
+    width: 200px;
+    height: 50px;
+    float: left;
+    border-right: 1px solid #e5e5e5;
+    position: relative;
+    margin: 15px 0;
+    padding-left: 75px
+}
+
+.newsnav ul li.w1 {
+    width: 80px
+}
+
+.newsnav ul li.w3 {
+    width: 220px
+}
+
+.newsnav ul li.last {
+    border-right: 0
+}
+
+.newsnav ul li span {
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 36px;
+    left: 30px;
+    top: 1px;
+    background: #f4f4f4;
+    color: #0cb95f;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px 4px;
+    border: 1px solid #0cb95f
+}
+
+.newsnav ul li a {
+    display: block;
+    float: left;
+    width: 50px;
+    padding: 5px 7px
+}
+
+.breadnews {
+    color: #aaa;
+    height: 14px;
+    line-height: 14px;
+    padding: 20px 0 20px 0;
+    text-align: left;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 20px
+}
+
+.breadnews a {
+    display: block;
+    float: left
+}
+
+.breadnews i {
+    background-image: url("/common/images/icons.png");
+    background-position: -30px -23px;
+    display: block;
+    float: left;
+    height: 18px;
+    margin: -1px 12px 0;
+    width: 8px
+}
+
+.breadnews strong {
+    color: #666;
+    font-weight: normal
+}
+
+.nblock .left {
+    width: 420px;
+    float: left
+}
+
+.nblock .left.big {
+    width: 870px;
+    margin-right: 20px;
+    float: left
+}
+
+.nblock .center {
+    width: 420px;
+    margin: 0 24px;
+    float: left
+}
+
+.nblock .right {
+    width: 300px;
+    float: left
+}
+
+.nblock .cross {
+    overflow: hidden;
+    position: relative;
+    width: 420px;
+    height: 250px
+}
+
+.nblock .cross ul {
+    height: 222px;
+    overflow: hidden
+}
+
+.nblock .cross li {
+    display: block;
+    float: left;
+    position: relative
+}
+
+.nblock .cross li a {
+    display: block;
+    width: 420px;
+    height: 222px
+}
+
+.nblock .cross li a img {
+    width: 420px;
+    height: 222px
+}
+
+.nblock .cross li a span {
+    opacity: .5;
+    background: #333;
+    color: #fff;
+    line-height: 40px;
+    padding: 0 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-family: "\5FAE\8F6F\96C5\9ED1";
+    font-size: 14px
+}
+
+.nblock .cross .circle {
+    bottom: 10px;
+    height: 5px;
+    left: 130px;
+    line-height: 10px;
+    position: absolute;
+    width: 130px
+}
+
+.nblock .cross .circle i {
+    background: #e5e5e5;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 5px;
+    margin: 0 5px;
+    opacity: .7;
+    text-align: center;
+    width: 32px
+}
+
+.nblock .cross .circle i.on {
+    background: #0cb95f
+}
+
+.nblock .news {
+    border: 1px solid #e5e5e5;
+    float: left;
+    width: 418px;
+    margin-bottom: 20px
+}
+
+.nblock .right .news {
+    width: 300px
+}
+
+.nblock .news .title {
+    background: #f4f4f4;
+    border-bottom: 1px solid #e5e5e5;
+    line-height: 35px;
+    padding-left: 20px
+}
+
+.nblock .news .title h4 {
+    float: left;
+    font-family: "\5FAE\8F6F\96C5\9ED1";
+    font-size: 14px;
+    width: 100px;
+    color: #666
+}
+
+.nblock .news .title a.nbtn {
+    background: #e16070;
+    color: #fff;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    padding: 0 5px;
+    margin: 7px 9px 0 0;
+    display: block;
+    float: right;
+    width: 50px
+}
+
+.nblock .news .title .sublink {
+    text-align: right;
+    padding-right: 10px
+}
+
+.nblock .news .title .sublink a {
+    color: #0cb95f;
+    width: 315px
+}
+
+.nblock .news .title .sublink label {
+    color: #0cb95f;
+    margin: 0 8px
+}
+
+.nblock .news ul {
+    padding: 5px
+}
+
+.nblock .news ul.items1 {
+    height: 140px;
+    overflow: hidden
+}
+
+.nblock .news ul.items1 li {
+    line-height: 28px;
+    float: left;
+    margin: 0 7px
+}
+
+.nblock .news ul.items1 li a {
+    text-decoration: underline;
+    color: #666
+}
+
+.nblock .news ul.items1 li a:hover {
+    color: #0cb95f
+}
+
+.nblock .news ul.items2 li {
+    float: left;
+    background-image: url("/common/images/icons.png");
+    background-position: -490px -394px;
+    background-repeat: no-repeat;
+    color: #999;
+    padding-left: 15px;
+    margin-right: 10px
+}
+
+.nblock .news ul.items2 li .hover {
+    background-position: -490px -438px
+}
+
+.nblock .news ul.items2 li a {
+    white-space: nowrap;
+    overflow: hidden;
+    width: 179px;
+    height: 28px;
+    line-height: 28px;
+    display: block
+}
+
+.nblock .news ul.items3 li {
+    background-image: url("/common/images/icons.png");
+    background-position: -490px -394px;
+    background-repeat: no-repeat;
+    color: #999;
+    padding-left: 15px
+}
+
+.nblock .news ul.items3 li .hover {
+    background-position: -490px -438px
+}
+
+.nblock .news ul.items3 li a {
+    white-space: nowrap;
+    overflow: hidden;
+    width: 252px;
+    height: 26px;
+    line-height: 26px;
+    display: block
+}
+
+.nblock .news ul.items4 li {
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden
+}
+
+.nblock .news ul.items4.long li {
+    padding-left: 10px
+}
+
+.nblock .news ul.items4 li label {
+    color: #999;
+    margin-right: 8px
+}
+
+.nblock .news ul.items4 li a {
+    color: #666
+}
+
+.nblock .news ul.items4 li a:hover {
+    color: #0cb95f
+}
+
+.nblock .news ul.items5 {
+    padding: 15px 5px 5px 5px
+}
+
+.nblock .news ul.items5 li {
+    height: 109px;
+    width: 120px;
+    float: left;
+    margin: 0 12px
+}
+
+.nblock .news ul.items5 li .t {
+    color: #666;
+    text-align: center;
+    width: 120px;
+    height: 14px;
+    overflow: hidden;
+    margin: 10px 0
+}
+
+.nblock .news ul.items5 li a {
+    display: block;
+    border: 1px solid #e5e5e5;
+    width: 120px
+}
+
+.nblock .news ul.items5 li a:hover {
+    border: 1px solid #ccc
+}
+
+.nblock .news ul.items5 li a img {
+    width: 120px;
+    height: 60px
+}
+
+.nblock .news ul.items6 {
+    padding: 10px 10px
+}
+
+.nblock .news ul.items6 li {
+    float: left;
+    height: 26px;
+    line-height: 26px;
+    margin: 0 10px;
+    overflow: hidden;
+    width: 120px
+}
+
+.nblock .news ul.items6 li a {
+    color: #666;
+    width: 130px;
+    text-decoration: underline
+}
+
+.nblock .news ul.items6 li a:hover {
+    color: #0cb95f
+}
+
+.nblock .news .imgnews a.s {
+    display: block;
+    float: left;
+    width: 122px;
+    padding: 15px 0 0 15px
+}
+
+.nblock .news .imgnews a.s img {
+    width: 122px;
+    height: 122px
+}
+
+.nblock .news .imgnews .items4 {
+    width: 260px;
+    float: left;
+    padding: 10px 10px 0 10px
+}
+
+.nblock .news .subnav {
+    padding: 0
+}
+
+.nblock .news .subnav li {
+    background: #f4f4f4;
+    float: left;
+    width: 100px
+}
+
+.nblock .news .subnav li.last a {
+    border-right: 0
+}
+
+.nblock .news .subnav li a {
+    border-bottom: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    color: #333;
+    display: block;
+    font-family: "\5FAE\8F6F\96C5\9ED1";
+    font-size: 14px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    text-decoration: none
+}
+
+.nblock .news .subnav li a.cur {
+    background: #fff;
+    border-bottom: 1px solid #fff
+}
+
+.nblock .catediv {
+    padding: 0 15px 15px 0;
+    position: relative
+}
+
+.nblock .catediv .line {
+    background-image: url("/common/images/line.png");
+    width: 779px;
+    height: 10px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 12px
+}
+
+.nblock .catediv .cname {
+    font-size: 18px;
+    font-weight: bold
+}
+
+.nblock .newslist li {
+    height: 120px;
+    border-bottom: 1px dotted #e5e5e5;
+    padding: 20px 0
+}
+
+.nblock .newslist li .pic {
+    display: block;
+    float: left;
+    width: 180px;
+    margin-right: 30px
+}
+
+.nblock .newslist li .pic img {
+    width: 180px;
+    height: 120px
+}
+
+.nblock .newslist .subinfo {
+    float: left;
+    width: 640px
+}
+
+.nblock .newslist .subinfo .title {
+    font-size: 18px;
+    font-family: "\5FAE\8F6F\96C5\9ED1"
+}
+
+.nblock .newslist .subinfo .title strong {
+    font-weight: normal
+}
+
+.nblock .newslist .subinfo .title label {
+    color: #999;
+    margin-right: 10px
+}
+
+.nblock .newslist .subinfo .txt {
+    color: #999;
+    margin-top: 8px;
+    line-height: 24px
+}
+
+.nblock .newslist .subinfo .d {
+    text-align: right;
+    color: #999
+}
+
+.adpic {
+    width: 100%;
+    margin-bottom: 20px;
+    clear: both
+}
+
+.adpic img {
+    width: 100%
+}
+
+.adpic a {
+    display: block;
+    width: 100%
+}
+
+.mainnews.bt {
+    margin-bottom: 13px
+}
+
+.mainnews strong {
+    font-weight: normal;
+    height: 28px;
+    line-height: 28px;
+    overflow: hidden;
+    display: block;
+    text-align: center
+}
+
+.mainnews strong a {
+    color: #0cb95f;
+    font-size: 18px;
+    font-family: "\5FAE\8F6F\96C5\9ED1"
+}
+
+.mainnews .items1 {
+    margin: 10px 0
+}
+
+.mainnews .items1 a {
+    display: block;
+    padding: 0 10px;
+    border-left: 1px solid #ccc;
+    overflow: hidden;
+    max-width: 120px;
+    color: #999;
+    float: left;
+    height: 14px
+}
+
+.mainnews .items1 a.first {
+    border-left: 0;
+    padding-left: 0
+}
+
+.mainnews .items2 {
+    font-family: "\5FAE\8F6F\96C5\9ED1";
+    font-size: 14px
+}
+
+.mainnews .items2 li {
+    height: 27px;
+    line-height: 27px;
+    overflow: hidden
+}
+
+.mainnews .items2 li a {
+    color: #666
+}
+
+.mainnews .items2 li label {
+    color: #999;
+    margin-right: 8px
+}
+
+.bnav li {
+    width: 150px;
+    height: 140px;
+    margin-right: 10px;
+    float: left;
+    background: #f4f4f4;
+    padding: 15px 20px
+}
+
+.bnav li.last {
+    margin-right: 0
+}
+
+.bnav li.hover {
+    background: #0cb95f
+}
+
+.bnav li.hover a {
+    color: #fff
+}
+
+.bnav li h3 {
+    margin-bottom: 5px
+}
+
+.bnav li h3 a {
+    font-weight: bold;
+    font-size: 14px
+}
+
+.bnav li .subct a {
+    display: block;
+    float: left;
+    width: 75px;
+    padding: 5px 0
+}
+
+.maininfo .newtitle {
+    font-size: 22px
+}
+
+.maininfo .newsinfo {
+    color: #999;
+    border-bottom: 1px dotted #e5e5e5;
+    padding: 0;
+    margin-bottom: 20px;
+    line-height: 30px
+}
+
+.maininfo .newsinfo.nb {
+    border-bottom: 0
+}
+
+.maininfo .newsinfo span {
+    padding: 0 15px;
+    height: 30px
+}
+
+.maininfo .newsinfo span.first {
+    padding-left: 0
+}
+
+.maininfo .newsinfo span.nfx {
+    float: right;
+    line-height: 30px
+}
+
+.maininfo .newsdesc {
+    line-height: 30px
+}
+
+.maininfo .newsdesc p {
+    text-indent: 30px;
+    font-size: 14px
+}
+
+.maininfo .newsdesc.big p {
+    font-size: 20px
+}
+
+.maininfo .newsdesc.small p {
+    font-size: 12px
+}
+
+.maininfo .newsinfo span a {
+    border: 1px solid #e5e5e4;
+    padding: 5px 10px;
+    margin-right: 10px
+}
+
+.maininfo .newsinfo .font {
+    margin-right: 0;
+    float: right
+}
+
+.maininfo .newsinfo .font a {
+    height: 18px;
+    width: 18px;
+    display: block;
+    float: left;
+    border: 1px solid #e5e5e5;
+    color: #888;
+    line-height: 18px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 5px
+}
+
+.maininfo .newsinfo .font label {
+    float: left
+}
+
+.maininfo .newsinfo .font a:hover {
+    color: #0cb95f
+}
+
+.maininfo .newsinfo .font a.cur {
+    color: #333;
+    background: #e5e5e5
+}
+
+.maininfo .newsdesc .summary {
+    background: #f4f4f4;
+    line-height: 24px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 14px;
+    text-indent: 25px
+}
+
+.nextnav {
+    border-bottom: 1px dotted #e5e5e5;
+    border-top: 1px dotted #e5e5e5;
+    padding: 15px 20px
+}
+
+.nextnav li {
+    line-height: 30px;
+    list-style-type: square;
+    color: #999
+}
+
+.nextnav li label {
+    color: #999;
+    margin-right: 5px;
+    font-size: 14px
+}
+
+.nextnav li a {
+    font-size: 14px
+}
+
+.relative {
+    padding: 20px 0
+}
+
+.relative h6 {
+    font-family: "\5FAE\8F6F\96C5\9ED1";
+    font-size: 14px
+}
+
+.relative .rlist {
+    padding: 10px 0 10px 20px
+}
+
+.relative .rlist li {
+    line-height: 30px;
+    background-image: url("/common/images/icons.png");
+    background-position: -490px -394px;
+    background-repeat: no-repeat;
+    color: #999;
+    padding-left: 15px
+}
+
+.relative .rlist li.hover {
+    background-position: -490px -438px
+}
+
+.relative .rlist li label {
+    color: #999;
+    float: right;
+    font-family: Arial;
+    font-size: 12px
+}
+
+.relative .rlist li a {
+    font-size: 14px
+}
+
+.maininfo .drug li {
+    display: block;
+    border: 1px solid #e5e5e5;
+    background: #f4f4f4;
+    padding: 20px;
+    margin: 20px 0
+}
+
+.maininfo .drug li .photo {
+    float: left;
+    display: block;
+    border: 1px solid #e5e5e5;
+    margin-right: 15px
+}
+
+.maininfo .drug li .photo img {
+    width: 100px;
+    height: 100px
+}
+
+.maininfo .drug li .detail {
+    float: left;
+    width: 540px;
+    text-align: left
+}
+
+.maininfo .drug li .detail p {
+    padding: 7px 0;
+    text-align: left;
+    line-height: 16px
+}
+
+.maininfo .drug li .detail .st {
+    color: #999
+}
+
+.maininfo .drug li .detail .title {
+    font-size: 16px;
+    font-family: "\5FAE\8F6F\96C5\9ED1";
+    background: 0;
+    height: 20px;
+    margin: 0
+}
+
+.maininfo .drug li .detail .desc {
+    color: #f90
+}
+
+.maininfo .drug li .detail .price label.s {
+    color: #999
+}
+
+.maininfo .drug li .op {
+    float: left;
+    width: 170px
+}
+
+.maininfo .drug li .op a.btnred {
+    margin: 30px 20px 30px 30px
+}
+
+.block2 {
+    border: 0;
+    margin-bottom: 20px;
+    padding-top: 20px
+}
+
+.block2 .ncatdiv {
+    background: #fff;
+    border-bottom: 1px solid #0cb95f
+}
+
+.block2 h4 {
+    color: #fff;
+    float: left;
+    padding: 0 15px;
+    background: #0cb95f;
+    font-weight: normal;
+    font-size: 14px;
+    font-family: "\5FAE\8F6F\96C5\9ED1";
+    padding: 0 20px;
+    height: 40px;
+    line-height: 40px
+}
+
+.block2 ul {
+    border: 1px solid #ddd;
+    border-top: 0
+}
+
+.block2 ul li {
+    float: left
+}
+
+.block2 ul li .photo {
+    display: block;
+    text-align: center
+}
+
+.block2 ul li .txt {
+    height: 20px;
+    overflow: hidden;
+    display: block;
+    margin-top: 5px;
+    line-height: 18px
+}
+
+.block2 ul li .st {
+    color: #999;
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    margin: 2px 0;
+    overflow: hidden
+}
+
+.block2 ul li .txt.nofix {
+    height: auto
+}
+
+.block2 ul li .subtitle {
+    color: #f90;
+    line-height: 20px;
+    padding: 2px 0
+}
+
+.block2 ul li .money {
+    height: 24px;
+    line-height: 24px;
+    color: #e50000;
+    font-family: Arial;
+    font-style: normal;
+    text-align: center
+}
+
+.block2 ul.li6 li {
+    width: 160px;
+    height: 230px;
+    padding: 15px 18px;
+    border-right: 1px solid #e5e5e5
+}
+
+.block2 ul.li6 li.last {
+    border-right: 0
+}
+
+.block2 ul.li6 li img {
+    width: 160px;
+    height: 160px
+}
+
+.block2 ul.li6 li .money {
+    font-size: 14px
+}
+
+a.btnred {
+    display: block;
+    color: #fff;
+    background: #e16070;
+    text-align: center;
+    padding: 10px;
+    font-family: "\5FAE\8F6F\96C5\9ED1";
+    font-size: 16px
+}
+
+a.btnred:hover {
+    text-decoration: none
+}
+
+.mly {
+    display: none;
+    padding: 0 15px;
+    color: #999
+}
+
+@media only screen and (max-width:480px) {
+    #wrap {
+        width: auto;
+        overflow: hidden;
+        padding: 10px
+    }
+
+    .header_top, .header, .nav, .newsnav, .breadnews, .right, .nfx, .bdsharebuttonbox,
+    .slidenav, .block2, .footer, .first, .ly {
+        display: none
+    }
+
+    .nblock .left.big {
+        width: auto;
+        margin-right: 0;
+        padding: 0
+    }
+
+    .newsdesc img {
+        max-width: 355px
+    }
+
+    .maininfo h1 {
+        padding: 0
+    }
+
+    .mly {
+        display: inline
+    }
+}
+
+@media only screen and (max-device-width:480px) {
+    #wrap {
+        width: auto;
+        overflow: hidden;
+        padding: 10px
+    }
+
+    .header_top, .header, .nav, .newsnav, .breadnews, .right, .nfx, .bdsharebuttonbox,
+    .slidenav, .block2, .footer, .first, .ly {
+        display: none
+    }
+
+    .nblock .left.big {
+        width: auto;
+        margin-right: 0;
+        padding: 0
+    }
+
+    .newsdesc img {
+        max-width: 355px
+    }
+
+    .maininfo h1 {
+        padding: 0
+    }
+
+    .mly {
+        display: inline
+    }
+}
+
+    </style>
+    <div id="wrap" class="clearfix">
+	<div class="adpic">
+		<a href="#"><img src="http://img.zhuyun.cn/M00/BE/8A/wKgJNFaqMNaAQSJcAAHIYaI5DPk653.jpg" alt="广告"></a>
+	</div>
+	<div class="nblock clearfix">
+		<div class="left">
+			<div class="news">
+				<div class="title clearfix">
+					<h4>行业新闻</h4>
+					<div class="sublink">
+						<a href="#" target="_blank">国际前沿</a>
+						<label>/</label>
+						<a href="#" target="_blank">高速新闻</a>
+						<label>/</label>
+						<a href="#" target="_blank">高速动态</a>
+					</div>
+				</div>
+				<div class="imgnews clearfix">
+					<a href="#" class="s" target="_blank"><img src="" alt="广告"></a>
+					<ul class="items4">
+						<li>
+						<label>[高速动态]</label>
+						<a title="高速动态" href="#" target="_blank">高速动态</a>
+						</li>
+						<li>
+						<label>[高速动态]</label>
+						<a title="高速动态" href="#" target="_blank">高速动态</a>
+						</li>
+						<li>
+						<label>[高速动态]</label>
+						<a title="高速动态" href="#" target="_blank">高速动态</a>
+						</li>
+						<li>
+						<label>[高速动态]</label>
+						<a title="高速动态" href="#" target="_blank">高速动态</a>
+						</li>
+						<li>
+						<label>[高速动态]</label>
+						<a title="高速动态" href="#" target="_blank">高速动态</a>
+						</li>
+					</ul>
+				</div>
+				<ul class="items4 long clearfix">
+					<li><label>[高速前沿]</label><a title="高速前沿" href="#" target="_blank">内容</a></li>
+					<li><label>[高速前沿]</label><a title="高速前沿" href="#" target="_blank">内容</a></li>
+					<li><label>[高速前沿]</label><a title="高速前沿" href="#" target="_blank">内容</a></li>
+					<li><label>[高速前沿]</label><a title="高速前沿" href="#" target="_blank">内容</a></li>
+					<li><label>[高速前沿]</label><a title="高速前沿" href="#" target="_blank">内容</a></li>
+				</ul>
+			</div>
+			<div class="news">
+				<div class="title clearfix">
+					<h4>出行常识</h4>
+					<div class="sublink">
+						<a href="#" target="_blank">出行常识</a>
+						<label>/</label>
+						<a href="#" target="_blank">出行常识</a>
+						<label>/</label>
+						<a href="#" target="_blank">出行常识</a>
+						<label>/</label>
+						<a href="#" target="_blank">出行常识</a>
+					</div>
+				</div>
+				<div class="imgnews clearfix">
+					<a href="#" class="s" target="_blank"><img src="" alt=""></a>
+					<ul class="items4">
+						<li>
+						<label>[合理驾驶]</label>
+						<a title="合理驾驶" href="#" target="_blank">合理安排驾驶...</a>
+						</li>
+						<li>
+						<label>[合理驾驶]</label>
+						<a title="合理驾驶" href="#" target="_blank">合理安排驾驶...</a>
+						</li>
+						<li>
+						<label>[合理驾驶]</label>
+						<a title="合理驾驶" href="#" target="_blank">合理安排驾驶...</a>
+						</li>
+						<li>
+						<label>[合理驾驶]</label>
+						<a title="合理驾驶" href="#" target="_blank">合理安排驾驶...</a>
+						</li>
+						<li>
+						<label>[合理驾驶]</label>
+						<a title="合理驾驶" href="#" target="_blank">合理安排驾驶...</a>
+						</li>
+					</ul>
+				</div>
+				<ul class="items4 long clearfix">
+					<li><label>[1234]</label><a title="1234" href="#" target="_blank">1234</a></li>
+					<li><label>[1234]</label><a title="1234" href="#" target="_blank">1234</a></li>
+					<li><label>[1234]</label><a title="1234" href="#" target="_blank">1234</a></li>
+					<li><label>[1234]</label><a title="1234" href="#" target="_blank">1234</a></li>
+					<li><label>[1234]</label><a title="1234" href="#" target="_blank">1234</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="center">
+			<div class="news">
+				<div class="title clearfix">
+					<h4>高速吧资讯</h4>
+					<div class="sublink">
+						<a href="#" target="_blank">开店指南</a>
+						<label>/</label>
+						<a href="#" target="_blank">经营有方</a>
+						<label>/</label>
+						<a href="#" target="_blank">11234</a>
+					</div>
+				</div>
+				<div class="imgnews clearfix">
+					<a href="#" class="s" target="_blank"><img src="" alt="广告"></a>
+					<ul class="items4">
+						<li>
+						<label>[合理驾驶]</label>
+						<a title="合理驾驶" href="#" target="_blank">合理安排驾驶...</a>
+						</li>
+						<li>
+						<label>[合理驾驶]</label>
+						<a title="合理驾驶" href="#" target="_blank">合理安排驾驶...</a>
+						</li>
+						<li>
+						<label>[合理驾驶]</label>
+						<a title="合理驾驶" href="#" target="_blank">合理安排驾驶...</a>
+						</li>
+						<li>
+						<label>[合理驾驶]</label>
+						<a title="合理驾驶" href="#" target="_blank">合理安排驾驶...</a>
+						</li>
+						<li>
+						<label>[合理驾驶]</label>
+						<a title="合理驾驶" href="#" target="_blank">合理安排驾驶...</a>
+						</li>
+					</ul>
+				</div>
+				<ul class="items4 long clearfix">
+					<li><label>[1234]</label><a title="1234" href="#" target="_blank">1234</a></li>
+					<li><label>[1234]</label><a title="1234" href="#" target="_blank">1234</a></li>
+					<li><label>[1234]</label><a title="1234" href="#" target="_blank">1234</a></li>
+					<li><label>[1234]</label><a title="1234" href="#" target="_blank">1234</a></li>
+					<li><label>[1234]</label><a title="1234" href="#" target="_blank">1234</a></li>
+				</ul>
+			</div>
+			<div class="news">
+				<div class="title clearfix">
+					<h4>1123</h4>
+					<div class="sublink">
+						<a href="#" target="_blank">开店指南</a>
+						<label>/</label>
+						<a href="#" target="_blank">经营有方</a>
+						<label>/</label>
+						<a href="#" target="_blank">11234</a>
+					</div>
+				</div>
+				<div class="imgnews clearfix">
+					<a href="#" class="s" target="_blank"><img src="" alt="广告"></a>
+					<ul class="items4">
+						<li>
+						<label>[合理驾驶]</label>
+						<a title="合理驾驶" href="#" target="_blank">合理安排驾驶...</a>
+						</li>
+						<li>
+						<label>[合理驾驶]</label>
+						<a title="合理驾驶" href="#" target="_blank">合理安排驾驶...</a>
+						</li>
+						<li>
+						<label>[合理驾驶]</label>
+						<a title="合理驾驶" href="#" target="_blank">合理安排驾驶...</a>
+						</li>
+						<li>
+						<label>[合理驾驶]</label>
+						<a title="合理驾驶" href="#" target="_blank">合理安排驾驶...</a>
+						</li>
+						<li>
+						<label>[合理驾驶]</label>
+						<a title="合理驾驶" href="#" target="_blank">合理安排驾驶...</a>
+						</li>
+					</ul>
+				</div>
+				<ul class="items4 long clearfix">
+					<li><label>[1234]</label><a title="1234" href="#" target="_blank">1234</a></li>
+					<li><label>[1234]</label><a title="1234" href="#" target="_blank">1234</a></li>
+					<li><label>[1234]</label><a title="1234" href="#" target="_blank">1234</a></li>
+					<li><label>[1234]</label><a title="1234" href="#" target="_blank">1234</a></li>
+					<li><label>[1234]</label><a title="1234" href="#" target="_blank">1234</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="right">
+			<div class="news">
+				<div class="title clearfix">
+					<h4>品牌厂家展示</h4>
+					<a href="#" class="nbtn">商家入驻</a>
+				</div>
+				<ul class="items5 clearfix">
+					<li>
+					<a title="1" href="#"><img src="" alt="2"></a>
+					<div class="t">
+						113
+					</div>
+					</li>
+					<li>
+					<a title="1" href="#"><img src="" alt="2"></a>
+					<div class="t">
+						113
+					</div>
+					</li>
+					<li>
+					<a title="1" href="#"><img src="" alt="2"></a>
+					<div class="t">
+						113
+					</div>
+					</li>
+					<li>
+					<a title="1" href="#"><img src="" alt="2"></a>
+					<div class="t">
+						113
+					</div>
+					</li>
+					<li>
+					<a title="1" href="#"><img src="" alt="2"></a>
+					<div class="t">
+						113
+					</div>
+					</li>
+					<li>
+					<a title="1" href="#"><img src="" alt="2"></a>
+					<div class="t">
+						113
+					</div>
+					</li>
+				</ul>
+			</div>
+			<div class="news">
+				<div class="title clearfix">
+					<h4>编辑推荐</h4>
+				</div>
+				<ul class="items3 clearfix">
+					<li><label>[1234]</label><a title="1234" href="#" target="_blank">1234</a></li>
+					<li><label>[1234]</label><a title="1234" href="#" target="_blank">1234</a></li>
+					<li><label>[1234]</label><a title="1234" href="#" target="_blank">1234</a></li>
+					<li><label>[1234]</label><a title="1234" href="#" target="_blank">1234</a></li>
+					<li><label>[1234]</label><a title="1234" href="#" target="_blank">1234</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="adpic">
+		<a href="#"><img src="http://img.zhuyun.cn/M00/BE/8A/wKgJNFaqMNaAQSJcAAHIYaI5DPk653.jpg" alt=""></a>
+	</div>
+	<div class="nblock clearfix">
+		<div class="left">
+			<div class="news">
+				<div class="title clearfix">
+					<h4>123</h4>
+					<div class="sublink">
+						<a href="#" target="_blank">开店指南</a>
+						<label>/</label>
+						<a href="#" target="_blank">经营有方</a>
+						<label>/</label>
+						<a href="#" target="_blank">11234</a>
+						<a href="#" target="_blank">2222</a>
+					</div>
+				</div>
+				<div class="imgnews clearfix">
+					<a href="#" class="s" target="_blank"><img src="" alt=""></a>
+					<ul class="items4">
+						<li>
+						<label>[合理驾驶]</label>
+						<a title="合理驾驶" href="#" target="_blank">合理安排驾驶...</a>
+						</li>
+						<li>
+						<label>[合理驾驶]</label>
+						<a title="合理驾驶" href="#" target="_blank">合理安排驾驶...</a>
+						</li>
+						<li>
+						<label>[合理驾驶]</label>
+						<a title="合理驾驶" href="#" target="_blank">合理安排驾驶...</a>
+						</li>
+						<li>
+						<label>[合理驾驶]</label>
+						<a title="合理驾驶" href="#" target="_blank">合理安排驾驶...</a>
+						</li>
+						<li>
+						<label>[合理驾驶]</label>
+						<a title="合理驾驶" href="#" target="_blank">合理安排驾驶...</a>
+						</li>
+					</ul>
+				</div>
+				<ul class="items4 long clearfix">
+					<li><label>[1234]</label><a title="1234" href="#" target="_blank">1234</a></li>
+					<li><label>[1234]</label><a title="1234" href="#" target="_blank">1234</a></li>
+					<li><label>[1234]</label><a title="1234" href="#" target="_blank">1234</a></li>
+					<li><label>[1234]</label><a title="1234" href="#" target="_blank">1234</a></li>
+					<li><label>[1234]</label><a title="1234" href="#" target="_blank">1234</a></li>
+				</ul>
+			</div>
+			<div class="news">
+				<div class="title clearfix">
+					<h4>22222</h4>
+					<div class="sublink">
+						<a href="#" target="_blank">开店指南</a>
+						<label>/</label>
+						<a href="#" target="_blank">经营有方</a>
+						<label>/</label>
+						<a href="#" target="_blank">11234</a>
+					</div>
+				</div>
+				<div class="imgnews clearfix">
+					<a href="#" class="s" target="_blank"><img src="" alt="广告"></a>
+					<ul class="items4">
+						<li>
+						<li>
+						<label>[合理驾驶]</label>
+						<a title="合理驾驶" href="#" target="_blank">合理安排驾驶...</a>
+						</li>
+						<li>
+						<label>[合理驾驶]</label>
+						<a title="合理驾驶" href="#" target="_blank">合理安排驾驶...</a>
+						</li>
+						<li>
+						<label>[合理驾驶]</label>
+						<a title="合理驾驶" href="#" target="_blank">合理安排驾驶...</a>
+						</li>
+						<li>
+						<label>[合理驾驶]</label>
+						<a title="合理驾驶" href="#" target="_blank">合理安排驾驶...</a>
+						</li>
+						<li>
+						<label>[合理驾驶]</label>
+						<a title="合理驾驶" href="#" target="_blank">合理安排驾驶...</a>
+						</li>
+					</ul>
+				</div>
+				<ul class="items4 long clearfix">
+					<li><label>[1234]</label><a title="1234" href="#" target="_blank">1234</a></li>
+					<li><label>[1234]</label><a title="1234" href="#" target="_blank">1234</a></li>
+					<li><label>[1234]</label><a title="1234" href="#" target="_blank">1234</a></li>
+					<li><label>[1234]</label><a title="1234" href="#" target="_blank">1234</a></li>
+					<li><label>[1234]</label><a title="1234" href="#" target="_blank">1234</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="center">
+			<div class="news">
+				<div class="title clearfix">
+					<h4>4444</h4>
+					<div class="sublink">
+						<a href="#" target="_blank">开店指南</a>
+						<label>/</label>
+						<a href="#" target="_blank">经营有方</a>
+						<label>/</label>
+						<a href="#" target="_blank">11234</a>
+						<a href="#" target="_blank">2222</a>
+					</div>
+				</div>
+				<div class="imgnews clearfix">
+					<a href="#" class="s" target="_blank"><img src="" alt="广告">
+    					
+					</a>
+					<ul class="items4">
+						<li>
+						<label>[合理驾驶]</label>
+						<a title="合理驾驶" href="#" target="_blank">合理安排驾驶...</a>
+						</li>
+						<li>
+						<label>[合理驾驶]</label>
+						<a title="合理驾驶" href="#" target="_blank">合理安排驾驶...</a>
+						</li>
+						<li>
+						<label>[合理驾驶]</label>
+						<a title="合理驾驶" href="#" target="_blank">合理安排驾驶...</a>
+						</li>
+						<li>
+						<label>[合理驾驶]</label>
+						<a title="合理驾驶" href="#" target="_blank">合理安排驾驶...</a>
+						</li>
+						<li>
+						<label>[合理驾驶]</label>
+						<a title="合理驾驶" href="#" target="_blank">合理安排驾驶...</a>
+						</li>
+					</ul>
+				</div>
+				<ul class="items4 long clearfix">
+					<li><label>[1234]</label><a title="1234" href="#" target="_blank">1234</a></li>
+					<li><label>[1234]</label><a title="1234" href="#" target="_blank">1234</a></li>
+					<li><label>[1234]</label><a title="1234" href="#" target="_blank">1234</a></li>
+					<li><label>[1234]</label><a title="1234" href="#" target="_blank">1234</a></li>
+					<li><label>[1234]</label><a title="1234" href="#" target="_blank">1234</a></li>
+				</ul>
+			</div>
+			<div class="news">
+				<div class="title clearfix">
+					<h4>1111</h4>
+					<div class="sublink">
+						<a href="#" target="_blank">开店指南</a>
+						<label>/</label>
+						<a href="#" target="_blank">经营有方</a>
+						<label>/</label>
+						<a href="#" target="_blank">11234</a>
+					</div>
+				</div>
+				<div class="imgnews clearfix">
+					<a href="#" class="s" target="_blank"><img src="" alt="广告">
+    					
+					</a>
+					<ul class="items4">
+						<li>
+						<li>
+						<label>[合理驾驶]</label>
+						<a title="合理驾驶" href="#" target="_blank">合理安排驾驶...</a>
+						</li>
+						<li>
+						<label>[合理驾驶]</label>
+						<a title="合理驾驶" href="#" target="_blank">合理安排驾驶...</a>
+						</li>
+						<li>
+						<label>[合理驾驶]</label>
+						<a title="合理驾驶" href="#" target="_blank">合理安排驾驶...</a>
+						</li>
+						<li>
+						<label>[合理驾驶]</label>
+						<a title="合理驾驶" href="#" target="_blank">合理安排驾驶...</a>
+						</li>
+						<li>
+						<label>[合理驾驶]</label>
+						<a title="合理驾驶" href="#" target="_blank">合理安排驾驶...</a>
+						</li>
+					</ul>
+				</div>
+				<ul class="items4 long clearfix">
+					<li><label>[1234]</label><a title="1234" href="#" target="_blank">1234</a></li>
+					<li><label>[1234]</label><a title="1234" href="#" target="_blank">1234</a></li>
+					<li><label>[1234]</label><a title="1234" href="#" target="_blank">1234</a></li>
+					<li><label>[1234]</label><a title="1234" href="#" target="_blank">1234</a></li>
+					<li><label>[1234]</label><a title="1234" href="#" target="_blank">1234</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="right">
+			<div class="adpic">
+				<a href="#"><img src="" alt="高速吧微信号"></a>
+			</div>
+			<div class="adpic">
+				<a href="#"><img src="" alt="查询优惠券，购物更方便"></a>
+			</div>
+		</div>
+	</div>
+	
+</div>
